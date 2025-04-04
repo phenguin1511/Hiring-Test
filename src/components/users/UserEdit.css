@@ -1,0 +1,94 @@
+/* Container */
+.containerUserEdit {
+      display         : flex;
+      flex-direction  : column;
+      align-items     : center;
+      padding         : 30px 20px;
+      background-color: #f5f7fa;
+      min-height      : 100vh;
+}
+
+/* Tiêu đề */
+.titleUserEdit {
+      font-size    : 2rem;
+      margin-bottom: 20px;
+      color        : #333;
+}
+
+/* Form container dạng card */
+.formUserEdit {
+      background    : #fff;
+      padding       : 30px;
+      border-radius : 8px;
+      box-shadow    : 0 2px 8px rgba(0, 0, 0, 0.1);
+      width         : 100%;
+      max-width     : 500px;
+      display       : flex;
+      flex-direction: column;
+      gap           : 20px;
+}
+
+/* Edit Item */
+.editItem {
+      display       : flex;
+      flex-direction: column;
+}
+
+/* Label style */
+.editItem label {
+      font-weight  : bold;
+      margin-bottom: 5px;
+      color        : #555;
+}
+
+/* Input style */
+.editItem input {
+      padding      : 12px;
+      border       : 1px solid #ddd;
+      border-radius: 4px;
+      font-size    : 1rem;
+      transition   : border-color 0.3s;
+}
+
+.editItem input:focus {
+      border-color: #007BFF;
+      outline     : none;
+}
+
+/* Button style */
+button[type="submit"] {
+      background-color: #007BFF;
+      color           : #fff;
+      border          : none;
+      padding         : 14px;
+      border-radius   : 4px;
+      font-size       : 1rem;
+      cursor          : pointer;
+      transition      : background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+      background-color: #0056b3;
+}
+
+/* Error message style */
+.error {
+      color      : red;
+      font-weight: bold;
+}
+
+
+/* Các kiểu dáng khác nếu cần */
+.dark-mode .containerUserEdit {
+      background-color: #444;
+      color           : #fff;
+}
+
+.dark-mode .titleUserEdit {
+      color: #fff;
+}
+
+
+.dark-mode .editItem label {
+      color: #fff;
+}

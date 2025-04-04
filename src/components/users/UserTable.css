@@ -1,0 +1,194 @@
+body {
+      margin     : 0;
+      padding    : 0;
+      box-sizing : border-box;
+      font-family: Arial, sans-serif;
+}
+
+.containerUserTable {
+      display         : flex;
+      flex-direction  : column;
+      align-items     : center;
+      justify-content : center;
+      height          : 100vh;
+      width           : 100%;
+      background-color: #f8f9fa;
+}
+
+.titleUserTable {
+      font-size    : 2rem;
+      font-weight  : bold;
+      margin-bottom: 1.5rem;
+      color        : #333;
+      text-align   : center;
+}
+
+.controlsUserTable {
+      display      : flex;
+      gap          : 10px;
+      margin-bottom: 10px;
+      align-items  : center;
+}
+
+.searchInput {
+      padding      : 8px;
+      border       : 1px solid #ccc;
+      border-radius: 4px;
+      width        : 200px;
+}
+
+.sortSelect {
+      padding      : 8px;
+      border       : 1px solid #ccc;
+      border-radius: 4px;
+}
+
+.tableHeader {
+      display         : flex;
+      font-weight     : bold;
+      background-color: #f5f5f5;
+      padding         : 10px;
+      border-bottom   : 2px solid #ddd;
+      width           : 100%;
+}
+
+.headerItem {
+      flex      : 1;
+      text-align: left;
+      padding   : 0 10px;
+}
+
+.userRow {
+      display      : flex;
+      align-items  : center;
+      border-bottom: 1px solid #ddd;
+}
+
+.userItem {
+      flex      : 1;
+      padding   : 10px;
+      text-align: left;
+}
+
+.button {
+      padding        : 8px 12px;
+      margin         : 4px;
+      border         : none;
+      cursor         : pointer;
+      border-radius  : 4px;
+      text-decoration: none;
+}
+
+.editButton {
+      background-color: #28a745;
+      color           : white;
+}
+
+.deleteButton {
+      background-color: #dc3545;
+      color           : white;
+}
+
+button:hover {
+      opacity: 0.8;
+}
+
+.statusUserItem {
+      color        : #28a745;
+      font-weight  : bold;
+      border       : 1px solid #28a745;
+      border-radius: 5px;
+      padding      : 5px 10px;
+}
+
+.paginationUserTable {
+      margin-top     : 20px;
+      display        : flex;
+      justify-content: center;
+      align-items    : center;
+      gap            : 10px;
+}
+
+.paginationUserTable button {
+      padding         : 6px 12px;
+      border          : none;
+      background-color: #1976d2;
+      color           : white;
+      border-radius   : 4px;
+      cursor          : pointer;
+}
+
+.paginationUserTable button:disabled {
+      background-color: #aaa;
+      cursor          : not-allowed;
+}
+
+.totalUsersTable {
+      font-size  : 1.5rem;
+      font-weight: bold;
+      margin-top : 1rem;
+      color      : #555;
+      text-align : center;
+}
+
+.userList {
+      width           : 80%;
+      max-height      : 400px;
+      overflow-y      : auto;
+      background-color: white;
+      box-shadow      : 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius   : 8px;
+      overflow        : hidden;
+}
+
+.deleteAllButton {
+      background-color: #dc3545;
+      color           : white;
+}
+
+/* Các kiểu dáng khác nếu cần */
+.dark-mode .containerUserTable {
+      background-color: #444;
+      color           : #fff;
+}
+
+.dark-mode .titleUserTable {
+      color: #fff;
+}
+
+.dark-mode .controlsUserTable {
+      color: #fff;
+}
+
+.dark-mode .tableHeader {
+      color: #000000;
+}
+
+.dark-mode .totalUsersTable {
+      color: #f0f0f0;
+}
+
+
+@media (max-width: 1536px) {
+      .containerUserTable {
+            width: 100%;
+      }
+}
+
+@media (max-width: 1024px) {
+      .containerUserTable {
+            width: 100%;
+      }
+}
+
+@media (max-width: 768px) {
+      .containerUserTable {
+            width: 100%;
+      }
+}
+
+@media (max-width: 480px) {
+      .containerUserTable {
+            width: 100%;
+      }
+}
