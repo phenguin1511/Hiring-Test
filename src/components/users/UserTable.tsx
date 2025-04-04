@@ -6,7 +6,7 @@ import LoadingComponent from './LoadingComponent';
 import './UserTable.css';
 import { FixedSizeList as List } from 'react-window';
 import { ThemeContext } from '../../providers/ThemeContext';
-// Định nghĩa props cho UserRow
+
 interface UserRowProps {
       index: number;
       style: React.CSSProperties;
@@ -20,7 +20,6 @@ interface UserRowProps {
       };
 }
 
-// Component UserRow để render từng hàng
 const UserRow: React.FC<UserRowProps> = ({ index, style, data }) => {
       const user = data.users[index];
       const { displayDate, detailedDate } = data.formatRegisterDate(user.registerDate);
